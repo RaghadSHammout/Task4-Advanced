@@ -1,0 +1,135 @@
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EFF8FF;
+    padding: 2rem 4rem;
+    z-index: 1000000000000000;
+    font-family: sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo img {
+    height: 56px;
+}
+
+
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+}
+.nav-links.open {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: white;
+}
+
+
+.nav-links.open li {
+    width: 100%;
+    margin-bottom: 25px;
+}
+.nav-links.open li:hover {
+  background-color: #D7E6EA;
+  border: none;
+}
+
+.nav-links.open li a {
+    display: block;
+    width: 100%;
+    padding: 1.2rem;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    color: #1f1f1f;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+
+.menu-toggle {
+    display: block;
+    cursor: pointer;
+    
+}
+
+.menu-toggle img {
+    height: 24px;
+}
+
+.login-mobile {
+    display: block;
+    margin: 2rem auto 0 auto;
+    width: 50%;
+    background-color: #005595;
+    padding: 0.6rem 1rem;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.login-desktop {
+    display: none;
+}
+
+@media (min-width: 769px) {
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .nav-links li {
+        list-style: none;
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .login-desktop {
+        display: block;
+        width: 135px;
+        background-color: #005595;
+        color: white;
+        padding: 13px 20px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 500;
+    }
+
+    .login-desktop a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .login-mobile {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .navbar {
+        padding: 0.8rem 1.3rem;
+    }
+}

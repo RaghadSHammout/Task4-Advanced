@@ -1,0 +1,32 @@
+.main-title{
+    margin: 94px 70px 56px 70px;
+}
+
+.main-title h2{
+    font-size: 39px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.main-title p{
+    font-size: 16px;
+    color: #22222280;
+
+}
+
+@media (max-width:480px){
+    .main-title{
+    margin:20px;
+}
+
+.main-title h2{
+    font-size: 30px;
+  
+}
+
+.main-title p{
+    font-size: 15px;
+
+
+}
+}
